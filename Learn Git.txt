@@ -1,0 +1,53 @@
+#Git config --list : xem chi tiết config. 
+
+#Git help : để xem tutorial của git. 
+
+# git clone --help:dể xem cách thực hiện câu lênh.
+
+#1: innit repository : Tạo ra 1 thư mục ( Demo) git init  { git add *.c, git comit -m}/ sử dụng git statue để check xem có file nào chưa có trong reponsitory , hoặc sau khi đã add nó vào.
+#2:git clone [url] :khi trên githud đã có repository rồi . 
+
+#git log :Để xem log của git commit.
+
+#git log --stat :xem file commit
+
+# mkdir level01: create a new fodel
+
+#$ touch .gitignore : create a file .gitignore . this file is contain rules.Rules seach tren .gitignore github
+
+#step with gitignore :
+	  git  add gitignore
+	 git add  NameFile -f
+#git  add --all : add all file untracked . git commit -a-m
+
+#git commt --amend :khi bạn commit file mà bị quên để không muốn thành 2 commit thì dùng .
+
+#git reset HEAD name :khi lỡ chọn tấc cả file ở staging muốn bỏ đi hoặc commit riêng thì dùng.
+
+#githud server
+	git fetch :để xem thông tin trên githud có thay đổi gì không
+	git pull:kéo về tải về các cập nhật đó
+	git push :
+#git remote : view name orgin
+
+#git remote -v :view path fetch and push of repository
+
+#git remote add name url :khi muốn một cái other machine cũng connect đến 1 repository để chia sẻ , dùng chung 1 path repository.
+
+#$ git remote show origin
+
+## Branch
+
+	#git branch : check  all branch
+
+	#git checkour name :poiter to name branch
+
+	#git log --oneline --decorate : write log.
+
+## merge branch
+
+Khi trong product có một issue thì không thể fix ngay trên product được mà phải tạo ra một nhánh riêng rồi megre nó vào product.
+megre nó sẽ gom 2 commit thành 1.
+để push branch another : checkout branch -> push  it on
+
+#git merge ,git no -merge

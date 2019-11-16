@@ -1,0 +1,38 @@
+#LAYOUT : 
+	Layout does not work alone.It must be inherited
+#Partialview :
+	khi muốn load từ database lên thì nên chia ra càng nhỏ càng tốt để dễ quản lí
+#action result là cha của partialview
+
+#khi bên html mà muốn truy vấn đến cơ sở dự liệu controller thì html phải @html.action ...
+
+#trong view có hỗ trợ temlplate : create ,edit,list ...
+
+#viewbag : có thể chứ 1 mảng.viewdata['' ""] giống như sesion php
+# route and param in controller is same.
+
+# ~ :Từ đầu nguồn của project
+
+#Return  redectToAction , Return view( " Chính nó hoặc của thàng GET. khác")
+
+#Phan trang MVC có hỗ trợ PageList Library
+
+#Routing : Đối với Area sử dụng .DataTokens.Add("area","Admin") ở trong router để mapper.
+
+#Update In database: have to update all field.
+
+@Khi người dùng nhấp vào liên kết và bạn muốn chuyển hướng người dùng đến một trang khác trong tình huống đó bạn phải sử dụng @ HTML.ActionLink.
+
+@Khi người dùng nhấp vào liên kết và bạn không muốn chuyển hướng đến trang khác, nhưng bạn muốn họ ở cùng một trang và hiển thị một số thông tin hoặc chi tiết mà không cần Đăng lại, tại thời điểm đó, tốt hơn là sử dụng @ AJAX.ActionLink .
+
+#public JsonResult SearchKey(string keyword)
+        {
+            var model = new UserModel().Searchkey(keyword);
+            return Json(new
+            {
+                result = model,
+   
+            },JsonRequestBehavior.AllowGet);//Json with method GET have to it allowGet
+  
+        }
+# Có những Model mình cần riêng thì mình tự tao như modelLogin ,Model nhóm more table 
