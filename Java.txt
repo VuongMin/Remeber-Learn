@@ -1,0 +1,42 @@
+#Document pro java 
+  GeeskforGeesk - java tutorial - stackoverflow
+
+
+			@Java CORE
+
+#Contans: final double PI=3.15 ,Hằng số có thể được gọi ở các method khác nếu nó thuộc cope class . 
+#Comment Document : Tạo ra 1 comment tài liệu / ** Entern.
+#Enum :1 nhóm  đối tượng ta muốn qui nó vào 1 collection gì đó ... (Động vật : voi - gà -cừu) được automatic đánh theo thứ tự 
+
+#API SUPORT : có thể nhấp ctr+click để xem code of method.
+
+@String Class:
+	Không thể set 1 kí tự trong class String ,nhưng có thể get từng kí tự charAt(i)
+	String hỗ trợ equals để so sánh chuỗi
+	@Null không thể đem đi thao tác được.
+@Lớp StringBuilder :
+ 	Dùng để tiết kiệm bộ nhớ khi tạo 1 đối tượng StringBuider nó sẽ có các API mà không phải tạo ra bộ nhớ mới sau đó  convert nó sang String class.
+	Muốn thay đổi Chuỗi mà chưa muốn đưa qua String class(bất biến).
+#Scanner
+	Đọc vào 1 kí tự scanner.next().charat(i)
+	Canner.hasNextLine() ... để duyệt data 
+#BigInterger -BigDecimber : Nếu kiểu int ,double không đủ.
+
+	@Array Java
+
+#value default : Đối tượng thì mảng đó mặc định các giá trị là null , với kiểu thông thường mặc định các giá trị là 0
+#ArraySort: Mặc định tăng dần muốn , và chỉ hỗ trợ khi kiểu của mảng đó là obj.
+#Mảng 2 chiều có thể dùng foreach : vòng loop ngoài truy cập mảng 2 chiều và đưa nó vào 1 mảng ,loop thứ 2 truy xuất từng phần từ trong mảng vừa được ghi vào.
+
+@Mảng bình thường thì nhớ khai báo có cả ước lượng cấp phát số lượng phần tử. mảng động thì không.
+ 
+@foerch dung để xem giá trị .
+
+# Overloading - Nạp chồng phương thức :Cùng tên  khác kiểu -tham số ...
+
+# Gọi phương thức khởi tạo khác trong khởi tạo this( param1, param2)
+
+#Relationship :
+	 Độc lập 2 class này có thể sài new của class kia .
+	 Bao quất tập hợp : thuộc tính class này có kiểu là class kia.
+	Kế thừa :A extend B{} 
