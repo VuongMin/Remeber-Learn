@@ -65,7 +65,7 @@
 		Phải có mối quan hệ IS-A (thừa kế).
 		Không thể overrride method static,final
 #Keyword SUPER:để truy xuất phần tử cha kế thừa hoặc nó có thể gọi đến constructor super();
-#Keyword final: class có final thì không thể kế thừa nó
+#Keyword final: class có final thì không thể kế thừa nó, Cấm kế thừa và override
 	Final nếu không được khởi tạo ngay lần đầu tiên static :
 		class A{  
  			 static final int data;//static blank final variable  
@@ -105,3 +105,50 @@ ICICI Rate of Interest: 7.3
 AXIS Rate of Interest: 9.7
 
 #chỉ có thằng cha mới new được thằng con.
+
+@Java Abstraction :Một lớp được khai báo với từ khóa trừu tượng được gọi là một lớp trừu tượng trong Java. Nó có thể có các phương thức trừu tượng và không trừu tượng (phương pháp với cơ thể).
+	Những điểm cần nhớ
+	Một lớp trừu tượng phải được khai báo với một từ khóa trừu tượng.
+	Nó có thể có các phương pháp trừu tượng và không trừu tượng.
+	Nó không thể được khởi tạo.
+	Nó có thể có các hàm tạo và các phương thức tĩnh.
+	Nó có thể có các phương thức cuối cùng sẽ buộc lớp con không thay đổi phần thân của phương thức.
+#Method abstract:Một phương thức được khai báo là trừu tượng và không có triển khai được gọi là một phương thức trừu tượng.
+
+Muốn class con orverride  hàm gì của thằng cha thì thằng cha phải là method astract
+
+
+@Interface :Một giao diện trong java là một bản thiết kế của một lớp. Nó có hằng số tĩnh và phương thức trừu tượng.
+	Nó không thể được khởi tạo giống như lớp trừu tượng.
+	Các phương thức trong interface mặc định là abstract và pubic
+	Giao diện chỉ có các biến tĩnh và cuối cùng  .
+	Thuộc tính pulic static final
+	
+	#Chỉ Ra các hành động chung để từng thằng con sẽ có thể tự định hành động cho mình  nhưng nó không quan hệ gì giữa các class
+
+	#Nếu Không muốn overrid lại toàn bộ method astract của interface thì class đó phải là class abstract
+	#Interface thì extend interface chứ không implement interface
+
+@Class không thể extend đa kế thừa nhưng có thể implement  đa .	.
+
+@ Interface and abstract đều có thể reference đến các class con mà extend hoặc implement nó. Gọi là đa hình
+
+@Kiểu object : là kiểm tham chiếu nên khi có thay đổi giá trị thì nó sẽ thay đổi ngược lại với kiểu nguyên thủy
+
+@wapper :
+     autoboxing :chuyển từ nguyên thủy qua class bao của nó : Interger x= 10;
+     unboxed :chuyển Class bao sang nguyên thủy                  : Interger x = 10       int res=x;
+
+@Tham số void a (int[] x) <=? void a(int ... x)
+
+#Ghi file cả oject thì class cần ghi phải implement seliazible
+
+@type Generic :
+	Method và class generic. 
+	Chỉ hỗ trợ đối với kiểu đối tượng con của kiểu cha OBJIECT không phải kiểu nguyên thủy . Trong generic nó có thể kế thừa ...
+
+#Collection framework:
+
+ 	Iterface List :
+		@Arraylist 
+		@Linkedlist: sử dụng liên kết đôi xóa cập nhật nhanh hơn arraylist

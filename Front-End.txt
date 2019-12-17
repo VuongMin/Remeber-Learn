@@ -1,0 +1,60 @@
+#Chuẩn W3C HTML
+
+Trong thẻ heading p không được chứa các thẻ block.
+
+#HTML 
+Nhóm thẻ block:
+ +Thẻ tiêu đề: heading 1 ...
+ +Xuống dòng: p (Xuống và có margin) 
+			  br :như kí tự enter .
+			  div:xuống nhưng ít margin.
+Nhóm thẻ Inline:
++Trình bày text: <b> , <i>, <del>,<a>,<u>
++<img > alt :dùng để chuẩn seo web để google tìm kiếm ảnh đó nói về gì.
+
+@CSS
+ 
+Chỉ có thẻ block mới có margin và padding.
+muốn thẻ inline  có margin và pading và ko xuống dòng thì display:inline-block.
+#Phân Cột Flex:
+	 Công thức:
+		 Cha phải là display:flex; cột con từ 2 -3 ... cột phải là 100% width theo cha.
+		 Nếu nhỏ hơn width nhỏ hơn cha và muốn có khoảng cách giữa các cột thì sài justy-conten:space-bewteen.	
+	width:100% : độ rộng bằng độ rộng div cha.
+
+#ICON font awesome:
+	Link đến link của font awesome.
+	Code và chọn icon.
+	Thay đổi màu sắc icon thì thêm class mới.
+
+#Căn Text
+	Căn ngang : Tại div bố : text-align:center hoặc display:flex;justyfi-conten:center;
+	Căn dọc :display:flex;align-item:center;
+
+
+#Pading thì cộng dồn khoảng thêm - margin thì giữ nguyên khối số đo.
+
+#Position:
+
+	Position:relative Đặt ở cha!
+	Absolute tag nao dung sau se chong len truoc no!
+Không nhất thiết cái nào cũng là positon:abssolut khi muốn 2 img lồng nhau có thể set 1 tấm rồi tấm kia để top lef  0
+
+#Transiton
+	
+                  Đặt ở class chịu tác động ngay class muốn chuyển động!
+	
+#xoay 3d:
+	perpactive 
+	
+	Tranform có hỗ trợ xoay theo ox,oy,oz , orgin
+
+#Dùng boxsing để khi nào muốn padding hoặc border không làm thêm tăng cộng dồn kích thước mà muốn nó vần là kích thước cũ.
+	Display: none and block không sử dung được transiton .
+	overflow:hidden  để ẩn che dấu các phần tràn ra!!
+	Để transiton : thuộc thích trước hover và hover muốn chuyển động phải giống nhau chỉ tăng size  chứ không thay đôi prop.
+	Ngoài không dùng layer thì mới có margin auto (không có position)
+
+@Nên dùng cặp thuộc tính positon relative , top left cho riêng ( after ,befort hay chỉ cho riêng mình nó ) để có thể dễ dàng điều chỉnh và tạo hiệu ứng dễ hơn .
+
+ @Nếu inline không cho sài  các thuộc tính của block thì display :block-inlne...
