@@ -1,0 +1,1 @@
+#Chỉnh sủa dựa trên thanh effect control. không sử được bằng thủ công.
