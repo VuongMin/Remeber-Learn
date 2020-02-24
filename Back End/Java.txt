@@ -1,0 +1,154 @@
+#Document pro java 
+  GeeskforGeesk - java tutorial - stackoverflow
+
+
+			@Java CORE
+
+#Contans: final double PI=3.15 ,Hằng số có thể được gọi ở các method khác nếu nó thuộc cope class . 
+#Comment Document : Tạo ra 1 comment tài liệu / ** Entern.
+#Enum :1 nhóm  đối tượng ta muốn qui nó vào 1 collection gì đó ... (Động vật : voi - gà -cừu) được automatic đánh theo thứ tự 
+
+#API SUPORT : có thể nhấp ctr+click để xem code of method.
+
+@String Class:
+	Không thể set 1 kí tự trong class String ,nhưng có thể get từng kí tự charAt(i)
+	String hỗ trợ equals để so sánh chuỗi
+	@Null không thể đem đi thao tác được.
+@Lớp StringBuilder :
+ 	Dùng để tiết kiệm bộ nhớ khi tạo 1 đối tượng StringBuider nó sẽ có các API mà không phải tạo ra bộ nhớ mới sau đó  convert nó sang String class.
+	Muốn thay đổi Chuỗi mà chưa muốn đưa qua String class(bất biến).
+#Scanner
+	Đọc vào 1 kí tự scanner.next().charat(i)
+	Canner.hasNextLine() ... để duyệt data 
+#BigInterger -BigDecimber : Nếu kiểu int ,double không đủ.
+
+	@Array Java
+
+#value default : Đối tượng thì mảng đó mặc định các giá trị là null , với kiểu thông thường mặc định các giá trị là 0
+#ArraySort: Mặc định tăng dần muốn , và chỉ hỗ trợ khi kiểu của mảng đó là obj.
+#Mảng 2 chiều có thể dùng foreach : vòng loop ngoài truy cập mảng 2 chiều và đưa nó vào 1 mảng ,loop thứ 2 truy xuất từng phần từ trong mảng vừa được ghi vào.
+
+@Mảng bình thường thì nhớ khai báo có cả ước lượng cấp phát số lượng phần tử. mảng động thì không.
+ 
+@foerch dung để xem giá trị .
+
+# Overloading - Nạp chồng phương thức :Cùng tên  khác kiểu -tham số ...
+
+# Gọi phương thức khởi tạo khác trong khởi tạo this( param1, param2)
+
+#Relationship :
+	 Độc lập 2 class này có thể sài new của class kia .
+	 Bao quất tập hợp : thuộc tính class này có kiểu là class kia.
+	Kế thừa :A extend B{} 
+@Package :Dùng để tránh sung đột , Trong file run chỉ được import vào 1 package cùng kiểu còn khi tạo new đối tượng thì phải viết rõ ràng kiểu thứ 2.vì nó không hiểu khi không viết rõ ràng
+
+#Nếu không khai báo acsecc modifiel thì mặc định java nó là kiểu defaul : scope thì truy cập trong cùng 1 package hoặc cùng lớp.
+
+#intans là biến được tạo trong class nhưng ngoài method.Không được cấp giá trị
+
+@Keyword THIS:
+	Đối với phương thức khởi tạo mà có param trùng thuộc tính của biến instance thì phải có this.instance.
+	invoke 1 phương thức trong một phương thức cùng class dùng this.method()
+	Dùng this để goi phương thức khởi tạo mặc định  hoặc ngược lại với khởi tạo tham số:this()|| this(pramar) trong class
+	Lợi dụng this(par) để có thể truyền giá trị nhanh và this(pra) phải được đặt đầu tiên nhé.
+	This có thể làm tham số và nó đại diện là kiểu của class
+@Inheritance:	
+	Thuộc tính của class  nên hạn chế sử dụng biến kiểu nguyên thủy mà thay đó là phân chia nhỏ ra các class để dễ quản lí.
+@Đa hình:
+	Overloading:Nếu một lớp có nhiều phương thức có cùng tên nhưng khác nhau về tham số, thì nó được gọi là Phương thức quá tải .
+                  
+	Override:Nếu lớp con (lớp con) có cùng phương thức như được khai báo trong lớp cha, thì nó được gọi là phương thức ghi đè trong Java
+	
+	Các quy tắc cho phương thức Java ghi đè:
+		Phương thức phải có cùng tên như trong lớp cha
+		Phương thức phải có cùng tham số như trong lớp cha.
+		Phải có mối quan hệ IS-A (thừa kế).
+		Không thể overrride method static,final
+#Keyword SUPER:để truy xuất phần tử cha kế thừa hoặc nó có thể gọi đến constructor super();
+#Keyword final: class có final thì không thể kế thừa nó, Cấm kế thừa và override
+	Final nếu không được khởi tạo ngay lần đầu tiên static :
+		class A{  
+ 			 static final int data;//static blank final variable  
+ 			 static{ data=50;}  
+  			public static void main(String args[]){  
+  			  System.out.println(A.data);  
+ 			}  
+		          } 
+#Sử dụng đa hình:
+class Bank{  
+	float getRateOfInterest(){return 0;}  
+}  
+class SBI extends Bank{  
+	float getRateOfInterest(){return 8.4f;}  
+}  
+class ICICI extends Bank{  
+	float getRateOfInterest(){return 7.3f;}  
+}  
+class AXIS extends Bank{  
+f	loat getRateOfInterest(){return 9.7f;}  
+}  
+class TestPolymorphism{  
+public static void main(String args[]){  
+	Bank b;  
+	b=new SBI();  
+	System.out.println("SBI Rate of Interest: "+b.getRateOfInterest());  
+	b=new ICICI();  
+	System.out.println("ICICI Rate of Interest: "+b.getRateOfInterest());  
+	b=new AXIS();  
+	System.out.println("AXIS Rate of Interest: "+b.getRateOfInterest());  
+}  
+}  
+Output:
+
+SBI Rate of Interest: 8.4
+ICICI Rate of Interest: 7.3
+AXIS Rate of Interest: 9.7
+
+#chỉ có thằng cha mới new được thằng con.
+
+@Java Abstraction :Một lớp được khai báo với từ khóa trừu tượng được gọi là một lớp trừu tượng trong Java. Nó có thể có các phương thức trừu tượng và không trừu tượng (phương pháp với cơ thể).
+	Những điểm cần nhớ
+	Một lớp trừu tượng phải được khai báo với một từ khóa trừu tượng.
+	Nó có thể có các phương pháp trừu tượng và không trừu tượng.
+	Nó không thể được khởi tạo.
+	Nó có thể có các hàm tạo và các phương thức tĩnh.
+	Nó có thể có các phương thức cuối cùng sẽ buộc lớp con không thay đổi phần thân của phương thức.
+#Method abstract:Một phương thức được khai báo là trừu tượng và không có triển khai được gọi là một phương thức trừu tượng.
+
+Muốn class con orverride  hàm gì của thằng cha thì thằng cha phải là method astract
+
+
+@Interface :Một giao diện trong java là một bản thiết kế của một lớp. Nó có hằng số tĩnh và phương thức trừu tượng.
+	Nó không thể được khởi tạo giống như lớp trừu tượng.
+	Các phương thức trong interface mặc định là abstract và pubic
+	Giao diện chỉ có các biến tĩnh và cuối cùng  .
+	Thuộc tính pulic static final
+	
+	#Chỉ Ra các hành động chung để từng thằng con sẽ có thể tự định hành động cho mình  nhưng nó không quan hệ gì giữa các class
+
+	#Nếu Không muốn overrid lại toàn bộ method astract của interface thì class đó phải là class abstract
+	#Interface thì extend interface chứ không implement interface
+
+@Class không thể extend đa kế thừa nhưng có thể implement  đa .	.
+
+@ Interface and abstract đều có thể reference đến các class con mà extend hoặc implement nó. Gọi là đa hình
+
+@Kiểu object : là kiểm tham chiếu nên khi có thay đổi giá trị thì nó sẽ thay đổi ngược lại với kiểu nguyên thủy
+
+@wapper :
+     autoboxing :chuyển từ nguyên thủy qua class bao của nó : Interger x= 10;
+     unboxed :chuyển Class bao sang nguyên thủy                  : Interger x = 10       int res=x;
+
+@Tham số void a (int[] x) <=? void a(int ... x)
+
+#Ghi file cả oject thì class cần ghi phải implement seliazible
+
+@type Generic :
+	Method và class generic. 
+	Chỉ hỗ trợ đối với kiểu đối tượng con của kiểu cha OBJIECT không phải kiểu nguyên thủy . Trong generic nó có thể kế thừa ...
+
+#Collection framework:
+
+ 	Iterface List :
+		@Arraylist 
+		@Linkedlist: sử dụng liên kết đôi xóa cập nhật nhanh hơn arraylist

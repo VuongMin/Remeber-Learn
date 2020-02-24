@@ -1,0 +1,31 @@
+# Array in js do not support type key -> value ( [] )
+
+#Ojbect in js dựa theo hướng đối tượng thôi ...  sử dụng biến để lưu đối tượng ( var x =  {})
+	Tất cả biến và method viết cách nhau bởi dấu phẩy(,) nhé.  Hỗ trợ This nhé
+
+#For( in ) chuyên sài cho kiểu đối tượng ... dùng xem.. Nó duyệt ở trong bụng của một thằng đối tượng đó ( thuộc tính của cái thằng đó rồi in ra ...) vì trong thằng đối tượng nó ko sài chỉ số ....
+
+@Convert type :
+	toString ()
+	Number()
+	ParseInt()
+
+@Selector Element:
+ 
+	Query Mutil :
+		getByClassName
+		getBytagName
+	Query Singel:
+		getByID
+		querySelector :Lấy phần tử đầu tiên tronng mảng ...
+	Tổng quất :
+		querySelectorAll     {id,class ,tag} Luôn trả về mảng kể cả khi lấy ID và khác hơn các kia là nó có thể truy vấn cả pro style của element([data-id]).
+
+		Cú pháp như selector css gồm mã giả ,phân cấp ...
+
+@Document.Ready :
+	'DOMContentLoaded' trong dấu nháy đơn sẽ load nhanh hơn...
+
+@Cac class trung chi import 1 lan/1
+
+@Dùng 1 cho nhiều : thì dùng data-id nha

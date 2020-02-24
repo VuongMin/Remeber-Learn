@@ -1,0 +1,9 @@
+Dùng amination css :
+	Có thể set độ thời gian cho nó dài một xúi và set độ chuyển động phần trăm cho nó nhỏ như nhau để tạo chuẩn động rung và mode chế độ intive vô tận.
+Bộ ba tranform :
+
+	Thuộc tính xoay:
+          	+ 3d: perpactive - Đặt ở thẻ bố .
+	+ Gía trị tâm quay : tranform-origin :0 50%  -> 0 từ gốc mép trái (oy) 50% trục mép trên (0x)
+
+#Amination viết đầy đủ kẻo nó lại gây sai ước tính của minh nên viết tắt gọn.

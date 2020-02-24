@@ -1,0 +1,46 @@
+#GRID
+
+	Chia chuẩn là 12 phần trong 1 row .. khi đã đủ 12 phần thì nó tự xuống dù div đó có bao ngoài.
+
+#Fluid :
+	Fluid full screen .  Không có Fluid thì lớp cha có một khoảng width căn giữa  1000px;
+
+#Công thức :
+	parent > Row > col 
+	
+#Bố cục theo screen :
+	Nếu ta để col-sm-4 ... thì từ sm (màn hình điện thoại trở lên ) thì chúng giống nhau ,còn ngược lại nhỏ hơn sm (xs) thì nó tự repon theo 12 phần.
+	Nếu chỉ ra từng screen thì nó sẽ theo cấu hình còn không thì nó theo setup mặc định.
+
+================COMPONENT =================
+#Breakcrumk : phân tần thư mục biết mình đang ở đâu.
+
+#Nút có trạng thái lg - sm - không viết gì thì hiểu là medium 
+#Độ dài nút thì nó được định nghĩa bằng class block và hiển thị chọn .active
+
+#BUTTON CHECKBOX -RADIO
+
+Component cha thì để data-toggle='butons' để xóa đi ô chọn checkbox . và đối tượng cần checkbox thì để btn bình thường
+
+#CARD-COLUMN 
+	Chia layout bất đồng bộ có khoảng thì bay lên chen vào.
+
+========================= Tổng kết V01: ============================
+
+mt-1 :margin- top :1rem
+pt-1:padding-top:1rem
+
+text-sm-right :như col từ sm trở lên căn phải nhỏ hơn sm căn trái.
+
+
+--------------------------------------------------------------------------------------------------
+#MENU RESPON Điện Thoại 
+		navbar-toggler :menu cho mọi màn hình
+
+#!important bắt buộc phải nhận css đó.
+
+#Ở Giao diện điện thoại  nó sẽ xuất hiện scroll khi hình quá lớn .. sử dụng img width:100%
+
+#Responsive nên thiết kết chiều rộng - cao theo tỉ lệ phần trăm không nên fixed cứng nó sẽ tạo ra chỗ hở khi để màn hình di động.
+
+	
